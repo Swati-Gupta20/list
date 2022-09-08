@@ -24,17 +24,22 @@ while(i<len(questions)):
     elif ans==5050:
         if count!=0:
             print("5050 lifeline is used")
+            ans=int(input("choose your answer:-"))
+            if ans==solutions[s]:
+                print("Congrats this is the right answer.")
+            else:
+                print("wrong answer")
         else:
             while(k<len(lifeline[i])):
                 print(k+1,".",lifeline[i][k])
                 k+=1
-        count+=1
-        ans=int(input("choose your answer:-"))
-        if ans==lifesol[i]:
-            print("Congrats this is the right answer.")
-        else:
-            print("wrong answer")
-            break       
+            count+=1
+            ans=int(input("choose your answer:-"))
+            if ans==lifesol[i]:
+                print("Congrats this is the right answer.")
+            else:
+                print("wrong answer")
+                break
     else:
         print("wrong answer")
         break
