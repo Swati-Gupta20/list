@@ -14,5 +14,5 @@ while(i<size):
             min=len(a)
         j+=1
     i+=1
-print(max,",",b)
-print(min,",",a)
+print((max,b))
+print((min,a))

@@ -1,6 +1,3 @@
-from re import L
-
-
 a=['Red', 'Maroon', 'Yellow', 'Olive']
 l=[]
 i=0
